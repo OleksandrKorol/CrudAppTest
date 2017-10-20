@@ -1,0 +1,42 @@
+DROP DATABASE IF EXISTS test;
+
+CREATE DATABASE test;
+
+USE test;
+
+CREATE TABLE `book`
+(
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(100) NOT NULL,
+	`description` VARCHAR(255) NOT NULL,
+	`author` VARCHAR(100) NOT NULL,
+	`isbn` VARCHAR(20) NOT NULL,
+	`printYear` INT(11) NOT NULL,
+	`readAlready` TINYINT(4) NOT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8_general_ci';
+
+INSERT INTO `book` (title, description, author, isbn, printYear, readAlready) VALUES
+	("Leonardo da Vinci", "A powerful story of an exhilarating mind and life....the book is a study in creativity: how to define it, how to achieve it.\"—The New Yorker","Walter Isaacson","1501139150", 2017, 0 ),
+	("Grant", "Pulitzer Prize winner Ron Chernow returns with a sweeping and dramatic portrait of one of our most compelling generals and presidents, Ulysses S. Grant", "Ron Chernow", "159420487X", 2017, 0),
+	("Braving the Wilderness", "#1 NEW YORK TIMES BESTSELLER • A timely and important new book that challenges everything we think we know about cultivating true belonging in our communities", "Brené Brown", "0812995848", 2017, 0),
+	("We Were Eight Years in Power", "NEW YORK TIMES BESTSELLER • In these “urgently relevant essays,\”* the National Book Award–winning author of Between the World and Me “reflects on race.", "Ta-Nehisi Coates", "0399590560", 2017, 0),
+	("The 5 Love Languages", "- Over 11 million copies sold - #1 New York Times Bestseller for 8 years running - Now celebrating its 25th anniversary", "Gary Chapman", "080241270X", 2015, 0),
+	("A Memoir of a Family and Culture in Crisis", "#1 NEW YORK TIMES BESTSELLER, NAMED BY THE TIMES AS ONE OF \"6 BOOKS TO HELP UNDERSTAND TRUMP'S WIN\" AND SOON TO BE A MAJOR-MOTION PICTURE DIRECTED BY RON HOWARD", "J. D. Vance", "0062300547", 2016, 0),
+	("Between the World and Me", "Hailed by Toni Morrison as \“required reading,\” a bold and personal literary exploration of America’s racial history by \“the single best writer on the subject of race in the United States\”", "Ta-Nehisi Coates", "0812993543", 2015, 0),
+	("Lessons From a Third Grade Dropout", "Go from making an impression to an impact. Six simple lessons modeled by an uneducated man were powerful enough to produce a Ph.D., a judge, and a lifetime of wisdom.", "Rick Rigsby", "1599510006", 2006, 0),
+	("The 48 Laws of Power", "Amoral, cunning, ruthless, and instructive, The 48 Laws of Power is the definitive manual for anyone interested in gaining, observing, or defending against ultimate control. ", "Robert Greene", "0140280197", 2000, 0),
+	("Man's Search for Meaning", "Psychiatrist Viktor Frankl's memoir has riveted generations of readers with its descriptions of life in Nazi death camps and its lessons for spiritual survival.", "Viktor E. Frankl", "080701429X", 2006, 0),
+	("Just Mercy: A Story of Justice and Redemption", "#1 New York Times Bestseller | Named one of the Best Books of the Year by The New York Times • The Washington Post • The Boston Globe • The Seattle Times • Esquire • Time", "Bryan Stevenson", "081298496X", 2015, 0),
+	("Born a Crime: Stories from a South African Childhood", "#1 NEW YORK TIMES BESTSELLER • The compelling, inspiring, and comically sublime story of one man’s coming-of-age, set during the twilight of apartheid and", "Trevor Noah", "0399588175", 2016, 0),
+	("Night (Night)", "Alert: This product may be shipped with or without the inclusion of the Oprah Book Club sticker. Please note that regardless of the cover, the books are identical.", "Elie Wiesel", "0374500010", 2006, 0),
+	("Women in Science", "A charmingly illustrated and educational book, New York Times best seller Women in Science highlights the contributions of fifty notable women to the fields of science, technology, engineering.", "Rachel Ignotofsky", "1607749769", 2016, 0),
+	("Ali: A Life", "The definitive biography of an American icon, from a New York Times best-selling author with unique access to Ali’s inner circle", "Jonathan Eig", "0544435249", 2017, 0),
+	("When Breath Becomes Air", "#1 NEW YORK TIMES BESTSELLER • PULITZER PRIZE FINALIST • This inspiring, exquisitely observed memoir finds hope and beauty in the face of insurmountable odds as an idealistic young neurosurgeon.", "Paul Kalanithi", "081298840X", 2016, 0),
+	("Obama: An Intimate Portrait", "This is the definitive visual biography of Barack Obama's historic Presidency, captured in unprecedented detail by his White House photographer--and presented in an oversize", "Pete Souza", "0316512583", 2017, 0),
+	("Alexander Hamilton", "Pulitzer Prize-winning author Ron Chernow presents a landmark biography of Alexander Hamilton, the Founding Father who galvanized, inspired, scandalized, and shaped the newborn nation.", "Ron Chernow", "0143034758", 2005, 0),
+	("The Magnolia Story", "These famous words are now synonymous with the dynamic husband-and-wife team Chip and Joanna Gaines, stars of HGTV’s Fixer Upper.", "Chip Gaines", "0718079183", 2016, 0),
+	("Lean In: Women, Work, and the Will to Lead", "Sandberg is chief operating officer of Facebook and coauthor of Option B with Adam Grant. In 2010, she gave an electrifying ", "Sheryl Sandberg", "0385349947", 2013, 0),
+	("Raising Trump", "In Raising Trump, Ivana Trump reflects on her extraordinary life and the raising of her three children—Donald Jr., Eric, and Ivanka—and recounts the lessons she taught her children as they were growing up.", "Ivana Trump", "1501177281", 2017, 0),
+	("Shoe Dog: A Memoir by the Creator of Nike", "In this candid and riveting memoir, for the first time ever, Nike founder and board chairman Phil Knight shares the inside story of the company’s early days.", "Phil Knight", "1501135910", 2016, 0);
