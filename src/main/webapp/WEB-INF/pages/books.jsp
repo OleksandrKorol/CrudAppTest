@@ -102,6 +102,7 @@
 <body>
 
 <h2 style="text-align: center;">Book List</h2>
+<h2 style="text-align: center;"><a href="/" class="aEdit">Book List</a></h2>
 
 <div class="panel-body">
     <c:url var="searchAction" value="/searchtitle"/>
