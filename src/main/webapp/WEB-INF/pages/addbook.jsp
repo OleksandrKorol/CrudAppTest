@@ -76,7 +76,7 @@
                          </form:label> </div>
                     <div class="col-xs-6">
                         <form:hidden path="id" value="${book.id}"/>
-                        <form:input cssClass="form-control" path="title" value="${book.title}"/>
+                        <form:input maxlength="100" cssClass="form-control" path="title" value="${book.title}"/>
                     </div>
                 </div>
 
@@ -86,7 +86,7 @@
                         <spring:message text="Author"/>
                     </form:label>
                     <div class="col-xs-6">
-                        <form:input cssClass="form-control" path="author" value="${book.author}"/>
+                        <form:input cssClass="form-control" maxlength="100" path="author" value="${book.author}"/>
                     </div>
                 </div>
                 </c:if>
@@ -97,7 +97,7 @@
                             <spring:message text="Author"/>
                         </form:label>
                         <div class="col-xs-6">
-                            <form:input cssClass="form-control"  id="disabledInput" path="author" value="${book.author}" readonly="true" disabled="true"/>
+                            <form:input cssClass="form-control" maxlength="100" id="disabledInput" path="author" value="${book.author}" readonly="true" disabled="true"/>
                             <form:hidden path="author"/>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                         <spring:message text="Description"/>
                     </form:label>
                     <div class="col-xs-6">
-                        <form:textarea rows="3" cssClass="form-control" path="description" value="${book.description}"/>
+                        <form:textarea rows="4" maxlength="255" cssClass="form-control" path="description" value="${book.description}"/>
 
                     </div>
                 </div>
@@ -118,7 +118,7 @@
                         <spring:message text="ISBN"/>
                     </form:label>
                     <div class="col-xs-6">
-                        <form:input cssClass="form-control" path="isbn" value="${book.isbn}"/>
+                        <form:input cssClass="form-control" maxlength="20" path="isbn" value="${book.isbn}"/>
                     </div>
                 </div>
 
