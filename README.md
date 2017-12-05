@@ -1,6 +1,8 @@
-CrudAppTest
+<h1>CrudAppTest<h1/>
 
-test task for javarush internship
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2165d60214e749669b17fa44ac861691)](https://www.codacy.com/app/OleksandrKorol/CrudAppTest?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=OleksandrKorol/CrudAppTest&amp;utm_campaign=Badge_Grade)
+
+Test task for javarush internship
 
 #####CRUD (create, read, update, delete). Стандартное crud приложение, которое отображает список всех книг в базе (с пейджингом). С возможностью их удаления, редактирования, добавления новых. И поиска по полю title.
 
